@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Nama | Yafi *(lengkapi nama lengkap)* |
-| NRP | *(isi NRP)* |
+| NRP | *5052241026* |
 | Kompetisi | [Kaggle — Document Image Classification](https://www.kaggle.com/t/ec93bc56cc9842959bb6728723d23d29) |
 | Framework | PyTorch + Hugging Face Transformers |
 

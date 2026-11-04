@@ -1,0 +1,15 @@
+# Versi yang dipakai saat eksperimen di Kaggle: torch 2.11, docTR 1.1.0, Python 3.13.
+torch>=2.4
+torchvision>=0.19
+transformers>=4.45
+python-doctr>=0.10
+scikit-learn>=1.5
+scipy>=1.13
+numpy>=1.26
+pandas>=2.2
+pillow>=10.4
+tqdm>=4.66
+pyyaml>=6.0
+matplotlib>=3.8
+jupyter>=1.0
+kaggle>=1.6

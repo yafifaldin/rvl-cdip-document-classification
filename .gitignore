@@ -1,0 +1,32 @@
+# Dataset kompetisi (~4,9 GB) - unduh sesuai petunjuk di README
+data/
+
+# Checkpoint model, probabilitas, dan hasil OCR (ratusan MB)
+checkpoint/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.npy
+*.jsonl.gz
+
+# File submission hasil run lokal
+submission*.csv
+
+# Kredensial Kaggle - JANGAN di-commit
+kaggle.json
+.kaggle/
+
+# Python dan Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Sistem operasi dan editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

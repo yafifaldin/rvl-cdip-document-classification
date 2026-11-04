@@ -1,0 +1,18 @@
+# Konfigurasi Model 1: encoder Donut (Swin Transformer) + head linear.
+# Nilai di sini sama dengan yang dipakai pada notebooks/02_donut_encoder.ipynb.
+model: donut
+pretrained: naver-clova-ix/donut-base   # BUKAN versi finetuned-rvlcdip (bocor ke data test)
+img_height: 1024
+img_width: 768
+batch_size: 8
+grad_accum: 2            # batch efektif = 16
+epochs: 3
+lr_encoder: 3.0e-5
+lr_head: 1.0e-3
+weight_decay: 0.05
+warmup_ratio: 0.05
+label_smoothing: 0.1
+gradient_checkpointing: true
+cache_images: false      # gambar 1024x768 terlalu besar untuk disimpan di RAM
+val_frac: 0.10
+seed: 42

@@ -1,0 +1,8 @@
+# Konfigurasi OCR docTR (GPU). Sama dengan notebooks/04_ocr_doctr.ipynb.
+det_arch: db_resnet50        # deteksi teks
+reco_arch: crnn_vgg16_bn     # pengenalan teks
+pages_per_call: 16
+det_bs: 8
+reco_bs: 512
+shard_size: 2000             # jumlah halaman per file shard
+time_budget_hours: 11.0      # berhenti sebelum batas 12 jam Kaggle

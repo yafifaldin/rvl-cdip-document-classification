@@ -1,0 +1,11 @@
+# Konfigurasi model teks (TF-IDF + Logistic Regression) dan ensemble.
+# Sama dengan notebooks/05_text_ensemble.ipynb.
+word_ngram: [1, 2]
+char_ngram: [3, 5]
+min_df: 3
+max_word_features: 200000
+max_char_features: 300000
+c_grid: [1.0, 4.0, 16.0]
+min_words: 5                 # halaman dengan < 5 kata OCR mendapat vote teks uniform
+weight_step: 0.05            # langkah grid bobot ensemble
+refit_full: true             # latih ulang model teks pada seluruh data train untuk prediksi test

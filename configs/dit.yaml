@@ -1,0 +1,18 @@
+# Konfigurasi Model 2: DiT-base (BEiT yang dilatih pada dokumen) + layer-wise LR decay.
+# Nilai di sini sama dengan yang dipakai pada notebooks/03_dit_ensemble.ipynb.
+model: dit
+pretrained: microsoft/dit-base         # BUKAN versi finetuned-rvlcdip (bocor ke data test)
+img_height: 224
+img_width: 224
+batch_size: 64
+grad_accum: 1
+epochs: 15
+lr: 2.0e-4               # LR layer teratas; layer bawah = lr * layer_decay^kedalaman
+layer_decay: 0.75
+weight_decay: 0.05
+warmup_epochs: 1
+label_smoothing: 0.1
+drop_path: 0.1
+cache_images: true       # 40k halaman x 224x224 uint8 ~ 2 GB, muat di RAM
+val_frac: 0.10
+seed: 42

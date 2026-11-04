@@ -39,7 +39,7 @@ Solusi akhir menggabungkan tiga model yang "melihat" dokumen dengan cara berbeda
 ├── README.md                    # cara penggunaan + laporan (file ini)
 ├── requirements.txt             # daftar library
 ├── .gitignore                   # data/, checkpoint/, dan file besar tidak di-commit
-├── configs/                     # semua hyperparameter (tidak ada angka "ajaib" di kode)
+├── configs/                     # semua hyperparameter 
 │   ├── donut.yaml
 │   ├── dit.yaml
 │   ├── ocr.yaml
